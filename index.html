@@ -143,20 +143,23 @@
         </div>
 
         <form class="contact-form">
-          <h3>Request a Quote</h3>
+        <!-- REQUEST A QUOTE SECTION -->
+<section class="section" id="quote">
+  <div class="container">
+    <h2 class="section-title">Request a Quote</h2>
+    <p>Fill in the details and we will get back to you on WhatsApp instantly!</p>
 
-          <input type="text" placeholder="Full Name" required />
-          <input type="email" placeholder="Email Address" required />
-          <input type="text" placeholder="Phone Number" required />
+    <form onsubmit="window.location='https://wa.me/254791540790?text=Hi!%20I%20want%20a%20quote%3A%20'+
+      encodeURIComponent(document.getElementById('project').value); return false;">
+      
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="text" id="phone" placeholder="Your Phone Number" required>
+      <textarea id="project" placeholder="Project Details" required></textarea>
+      <button type="submit">Send Quote via WhatsApp</button>
+    </form>
+  </div>
+</section>
 
-          <textarea placeholder="Describe your project..." required></textarea>
-
-          <button type="submit" class="btn">Send Message</button>
-        </form>
-
-      </div>
-    </div>
-  </section>
 
   <!-- FOOTER -->
   <footer>
